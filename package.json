@@ -1,0 +1,11 @@
+{
+  "name": "json-serializer",
+  "version": "1.0.0",
+  "description": "Plugin for serializing JSON objects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dawid Macek",
+  "license": "ISC"
+}
