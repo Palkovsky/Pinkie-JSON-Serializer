@@ -7,15 +7,20 @@ var schema = {
 	'surname' : true,
 	'hajs' : {
 		'as' : 'salary', 
-		'set' : function(data, key){
-			return {'brutto' : data[key], 'netto' : data[key] * 1.23}
+		'set' : function(data, bundle){
+			return {'brutto' : data['hajs'], 'netto' : data['hajs'] * 1.23}
 		}
 	},
 	'zwierzaki' : {
 		'as' : 'pets',
 		'show' : {
 			'name' : {'as' : 'imie'},
-			'rasa' : {'minimize' : false}
+			'rasa' : true,
+			'price' : {
+				'set' : function(data, bundle){
+					return bundle['price'];
+				}
+			}
 		}
 	}
 };
@@ -40,4 +45,4 @@ var data = {
 	]
 };
 
-console.log(serializer.serialize(data, schema));
+console.log(serializer.serialize(data, schema, {'price' : 123}));
