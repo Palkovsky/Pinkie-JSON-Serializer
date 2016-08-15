@@ -11,7 +11,7 @@ A simple, lightweight JSON serializer. I was inspired by [active-model-serialize
 Pinkie is available on **npm**.
 
 ```
-npm install --save pinkie-serializer
+npm install --save pinkie-json-serializer
 ```
 
 ## Usage

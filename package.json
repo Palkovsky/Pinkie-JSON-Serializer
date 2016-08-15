@@ -1,15 +1,19 @@
 {
-  "name": "json-serializer",
-  "version": "1.0.0",
-  "description": "Plugin for serializing JSON objects.",
+  "name": "pinkie-json-serializer",
+  "version": "1.0.2",
+  "description": "Lightweight library for serializing JSON objects.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Dawid Macek",
-  "license": "ISC",
+  "author": "Dawid Macek <dawidmacek42@gmail.com>",
+  "license": "Apache-2.0",
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.0.2"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/Palkovsky/Pinkie-JSON-Serializer"
   }
 }
