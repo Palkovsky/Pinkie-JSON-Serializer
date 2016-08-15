@@ -31,7 +31,7 @@ var user = {
 It would be nice to have one place in our project, where we could properly format our output. So we hook up this serializer in our data access layer. It may look as follows:
 
 ```javascript
-    var Serializer = require('pinkie-serializer');
+    var Serializer = require('pinkie-json-serializer');
     var serializer = new Serializer();
     
     function isOwner(id){
@@ -80,7 +80,7 @@ I used it as a **Moongose** plugin when I was building my API. I implemented it 
 
 ```javascript
     //src/models/plugins/serializer.js
-    var Serializer = require('pinkie-serializer');
+    var Serializer = require('pinkie-json-serializer');
     var serializer = new Serializer();
     
     module.exports = function(schema, serialization_schema){
