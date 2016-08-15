@@ -4,7 +4,7 @@
 
 ## Introduction
 
-A simple, lightweight JSON serializer. I was inspired by [active-model-serializer](https://github.com/rails-api/active_model_serializers) for Ruby, but this one is not binded to one specific technology(ActiveModel ORM for example) and can be easily implemented into any situation.
+A simple, lightweight JSON serializer. I was inspired by [active-model-serializer](https://github.com/rails-api/active_model_serializers) for Ruby, but this one is not binded to one specific technology(ActiveModel ORM for example) and can be easily implemented in any situation.
 
 ## Installation
 
@@ -73,6 +73,8 @@ It would be nice to have one place in our project, where we could properly forma
 Schema allows nested arrays and objects, but in this case the **"show"** value must contain  next serialization schema.
 
 ## Integrating with other software
+
+### Moongose
 
 I used it as a **Moongose** plugin when I was building my API. I implemented it as Moongose middleware, but it has some downsides like inability to access request object and parse headers for example(in this case you may want to create serialize method on your model with request arg).
 

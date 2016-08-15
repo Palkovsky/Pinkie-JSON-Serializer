@@ -1,3 +1,4 @@
+/*
 var Serializer = require('./lib/serializer');
 
 var serializer = new Serializer();
@@ -46,3 +47,4 @@ var data = {
 };
 
 console.log(serializer.serialize(data, schema, {'price' : 123}));
+*/
