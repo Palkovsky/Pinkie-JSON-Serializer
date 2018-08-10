@@ -4,7 +4,7 @@
 
 ## Introduction
 
-A simple, lightweight JSON serializer. I was inspired by [active-model-serializer](https://github.com/rails-api/active_model_serializers) for Ruby, but this one is not binded to one specific technology(ActiveModel ORM for example) and can be easily implemented in any situation.
+A simple, lightweight JSON serializer. 
 
 ## Installation
 
